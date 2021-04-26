@@ -10,6 +10,12 @@
       text-decoration:underline;
       color:powderblue;
     }
+    #first{
+      color:green;
+    }
+    span{
+      color:red;
+    }
   </style>
 
 </head>
@@ -18,6 +24,16 @@
 <h1>
   <a href ="index.html"> WEB </a>
 </h1>
+
+<input type="button" value="NIGHT" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+">
+<input type="button" value="DAY" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+">
+
 
 <ol>
   <li><a href ="1.html"> HTML </a></li>
@@ -30,8 +46,8 @@
 <img src="coding.jpg" width="40%" >
 
 <p>
-  <span class="js">javascript</span> tag what's new!! it's a very portable. <span class="js">ZzzZ</span>
-  english is very difficult.
+  <span id="first" class="js">javascript</span> tag what's <span>new!!</span> it's a very portable. <span class="js">ZzzZ</span>
+  english <span>is</span> very difficult.
 </p>
 
 
