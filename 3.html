@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - javascripts</title>
+  <title>WEB2 - javascripts</title>
   <meta charset="utf-8">
 
   <style>
@@ -24,19 +24,11 @@
 <h1>
   <a href ="index.html"> WEB </a>
 </h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="color.js"></script>
 
 <input type="button" value="LIGHT OFF" onclick="
-  var target = document.querySelector('body');
-
-  if (this.value === 'LIGHT OFF') {
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'LIGHT ON'
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'LIGHT OFF'
-  }
+  NightDayHandler(this);
 ">
 
 <ol>
@@ -55,17 +47,7 @@
 </p>
 
 <input type="button" value="LIGHT OFF" onclick="
-  var target = document.querySelector('body');
-
-  if (this.value === 'LIGHT OFF') {
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'LIGHT ON'
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'LIGHT OFF'
-  }
+  NightDayHandler(this);
 ">
 
 </body>
